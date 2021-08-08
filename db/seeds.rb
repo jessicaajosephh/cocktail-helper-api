@@ -10,5 +10,5 @@ Ingredient.destroy_all
 
 mimosa = Cocktail.create(name: "Mimosa", image: "https://cdn.loveandlemons.com/wp-content/uploads/2019/12/mimosa-1080x1080.jpg", instructions: "Pour the sparkling wine into the Champagne flutes, filling each glass about half full. Pour the orange juice on top to fill each glass and serve")
 
-prosecco = Ingredient.create(name: "Prosecco - 2.5 oz", cockatil_id: mimosa.id)
+prosecco = Ingredient.create(name: "Prosecco - 2.5 oz", cocktail_id: mimosa.id)
 orange_juice = Ingredient.create(name: "Orange Juice - 2.5 oz", cocktail_id: mimosa.id)
