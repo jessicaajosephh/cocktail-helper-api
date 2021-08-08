@@ -14,4 +14,15 @@ class IngredientsController < ApplicationController
             end
     end
 
+    def destroy 
+        ingredient = Ingredient.find(params[:id])
+        ingedient.destroy 
+    end
+
+    private 
+
+    def ingredient_params 
+        params.require(:ingredient).permit(:name, :cocktail_id)
+    end
+
 end
